@@ -7,7 +7,7 @@ const portDef = process.env.PORT || 3000;
 const { port } = minimist(process.argv.slice(2), { alias: { "p": "port" }, default: { "port":  portDef} });
 
 export const serverConfig = {
-  PORT: port || portDef,
+  PORT: port || portDef, 
   STORAGE: process.env.STORAGE,
   STORAGE_TYPE: process.env.STORAGE_TYPE,
   MONGO_ATLAS: process.env.MONGO_ATLAS,
